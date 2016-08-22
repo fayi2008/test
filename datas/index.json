@@ -1,0 +1,18 @@
+{
+  "status":200,
+  "result":[
+    {
+      "title":"头部特效",
+      "list":[
+        {
+          "name":"列表下拉",
+          "href":"./view/header/1.html"
+        },
+        {
+          "name":"列表横向",
+          "href":"./view/header/2.html"
+        }
+      ]
+    }
+  ]
+}

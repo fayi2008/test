@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="./dist/css/index.css">
+    <script src="./lib/jquery.min.js"></script>
+    <script src="./dist/js/index.js"></script>
+</head>
+<body id="index">
+    <div class="example-box" v-for="list1 in result">
+        <div class="example-title">
+            {{list1.title}}
+        </div>
+        <div class="example-list">
+            <a  v-for="list2 in list1.list" href="{{list2.href}}">{{list2.name}}</a>
+        </div>
+    </div>
+
+
+</body>
+</html>
