@@ -425,3 +425,30 @@ a:visited {
     background-color: #fff;
     color: #000;
 }
+
+.h-1{
+    height: 202px;
+}
+.h-banner1{
+    float: right;
+}
+.h-box1{
+    width: 20px;
+    height: 202px;
+    vertical-align: bottom;
+    float: left;
+    color: #fff;
+    overflow: hidden;
+
+}
+.h-box-item1{
+
+}
+.h-title1{
+    width: 20px;
+    height: 202px;
+    loat: left;
+}
+.h-list1{
+    float: left;
+}
