@@ -12,7 +12,17 @@
     float: left;
 }
 .history-back{
+    border-radius: 50px;
+    height: 60px;
+    width: 60px;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
 
+    text-align: center;
+    line-height: 60px;
+    background-color: #000;
+    color: #fff;
 }
 .example-box{
     margin:0 10px;
@@ -68,10 +78,11 @@
     height: 40px;
     line-height: 40px;
     display:block;
-    border: 1px solid #000;
-    background-color: #fff;
+    border-top: 1px solid #fff;
+
+    background-color: #000;
     text-align: center;
-    color: #000;
+    color: #fff;
     transition:all .5s;
 }
 
@@ -80,6 +91,6 @@
 
 }
 .h-item:hover{
-    background-color: #000;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
 }
