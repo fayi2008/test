@@ -1,3 +1,19 @@
+.header{
+    height: 82px;
+    background-color: #000;
+
+}
+.logo{
+    height: 62px;
+    width: 144px;
+    background: url('img/logo.png');
+    margin-left: 10px;
+    margin-top: 10px;
+    float: left;
+}
+.history-back{
+
+}
 .example-box{
     margin:0 10px;
     padding: 10px 0;
@@ -15,23 +31,29 @@
     float: left;
     padding: 0 10px;
 }
+.h-banner{
 
+    float: right;
+}
 .h-box{
     float: left;
-    width: 20%;
-    height: 60px;
-    line-height: 60px;
+    width: 120px;
+    height: 62px;
+    line-height: 62px;
     text-align: center;
     font-size: 16px;
     font-weight: bold;
-    background-color: #fff;
-    box-shadow: 0 0 1px #000;
-    color: #333;
+    margin-top: 10px;
+    margin-right: 10px;
+    color: #fff;
     cursor: pointer;
     position: relative;
     transition:all .5s;
 }
-
+.h-box:hover{
+    background-color: #fff;
+    color: #000;
+}
 .h-list{
     display: none;
     overflow: hidden;
@@ -46,20 +68,18 @@
     height: 40px;
     line-height: 40px;
     display:block;
-    border-top: 1px solid #fff;
-    background-color:#ff0000;
+    border: 1px solid #000;
+    background-color: #fff;
     text-align: center;
-    color: #fff;
+    color: #000;
     transition:all .5s;
 }
-.h-box:hover{
-    background-color: #3399cc;
-    color: #fff;
-}
+
 .h-box:hover .h-list{
     display: block;
 
 }
 .h-item:hover{
-    background-color: #8b0000;
+    background-color: #000;
+    color: #fff;
 }
