@@ -13,6 +13,19 @@
           "href":"./view/header/2.html"
         }
       ]
+    },
+    {
+      "title":"banner特效",
+      "list":[
+        {
+          "name":"普通切換",
+          "href":"./view/banner/1.html"
+        },
+        {
+          "name":"列表横向",
+          "href":"./view/banner/2.html"
+        }
+      ]
     }
   ]
 }

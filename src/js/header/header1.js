@@ -1,4 +1,4 @@
-require('../../css/header/header2.css')
+require('../../css/header/header1.css')
 
 require('./header.js')
 

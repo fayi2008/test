@@ -1,0 +1,13 @@
+.swiper-container{
+    height: 300px;
+}
+.swiper-wrapper{
+    height: 300px;
+}
+.swiper-slide{
+    height: 300px;
+    color: #333;
+    text-align: center;
+    line-height: 300px;
+    font-size: 20px;
+}

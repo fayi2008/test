@@ -7,7 +7,7 @@ module.exports = {
         index: './src/main.js',
         header1:'./src/js/header/header1.js',
         header2:'./src/js/header/header2.js',
-        banner:'./src/js/banner.js'
+        banner1:'./src/js/banner/1.js'
     },
     //入口文件输出配置
     output: {
