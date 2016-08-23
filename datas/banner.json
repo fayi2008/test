@@ -1,0 +1,25 @@
+{
+  "status": 200,
+  "result": [
+    {
+      "name":"banner1",
+      "pic":"#ff0000"
+    },
+    {
+      "name":"banner2",
+      "pic":"#ffff00"
+    },
+    {
+      "name":"banner3",
+      "pic":"#ffffff"
+    },
+    {
+      "name":"banner4",
+      "pic":"#00ffff"
+    },
+    {
+      "name":"banner5",
+      "pic":"#0000ff"
+    }
+  ]
+}
