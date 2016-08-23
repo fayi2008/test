@@ -23,7 +23,7 @@ module.exports = {
         ]
     },
     plugins: [
-        new ExtractTextPlugin('css/index.css')
+        new ExtractTextPlugin('css/[name].css')
         
     ]
 

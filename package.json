@@ -26,6 +26,7 @@
     "style-loader": "^0.13.1",
     "stylus-loader": "^2.1.2",
     "swipe": "^1.7.7",
+    "swiper": "^3.3.1",
     "tapable": "^0.2.4",
     "template-html-loader": "^0.0.3",
     "url-loader": "^0.5.7",
