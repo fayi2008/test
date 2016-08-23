@@ -5,7 +5,8 @@ module.exports = {
     //页面入口文件配置
     entry: {
         index: './src/main.js',
-        header:'./src/js/header.js',
+        header1:'./src/js/header/header1.js',
+        header2:'./src/js/header/header2.js',
         banner:'./src/js/banner.js'
     },
     //入口文件输出配置
