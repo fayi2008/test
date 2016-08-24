@@ -30,8 +30,10 @@ class A2{
                 spaceBetween: 30,
                 grabCursor: true,
                 autoplay: 2500,
-                autoplayDisableOnInteraction: false
-               // centeredSlides: true
+                autoplayDisableOnInteraction: false,
+                effect: 'flip',
+                grabCursor: true
+                // centeredSlides: true
             })
         })
     }

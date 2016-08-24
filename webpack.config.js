@@ -8,7 +8,10 @@ module.exports = {
         header1:'./src/js/header/header1.js',
         header2:'./src/js/header/header2.js',
         banner1:'./src/js/banner/1.js',
-        banner2:'./src/js/banner/2.js'
+        banner2:'./src/js/banner/2.js',
+        banner3:'./src/js/banner/3.js',
+        banner4:'./src/js/banner/4.js',
+        banner5:'./src/js/banner/5.js'
     },
     //入口文件输出配置
     output: {

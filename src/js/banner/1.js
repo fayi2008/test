@@ -28,7 +28,9 @@ class A1{
                 slidesPerView: 'auto',
                 centeredSlides: true,
                 spaceBetween: 30,
-                grabCursor: true
+                grabCursor: true,
+                autoplay: 2500,
+                autoplayDisableOnInteraction: false
             })
         })
     }

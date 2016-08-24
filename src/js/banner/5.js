@@ -31,7 +31,7 @@ class A2{
                 grabCursor: true,
                 autoplay: 2500,
                 autoplayDisableOnInteraction: false
-               // centeredSlides: true
+                // centeredSlides: true
             })
         })
     }
