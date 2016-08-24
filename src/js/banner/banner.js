@@ -33,7 +33,7 @@ class banner {
         $.getJSON('../../datas/banner.json').done(function (rs) {
 
             new vue({
-                el: '#swiper',
+                el: '#swiper_box',
                 data: rs,
                 ready: function () {
                     _plus._back()
