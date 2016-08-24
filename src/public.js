@@ -25,7 +25,7 @@
         var html='<div class="history-back">返回</div>'
         $('body').append(html)
         
-        $('.history-back').off('click').on('click',function () {
+        $('.history-back,.logo').off('click').on('click',function () {
             location.href='/test/index.html'
         })
     }
