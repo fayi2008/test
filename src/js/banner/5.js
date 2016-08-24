@@ -30,7 +30,15 @@ class A2{
                 spaceBetween: 30,
                 grabCursor: true,
                 autoplay: 2500,
-                autoplayDisableOnInteraction: false
+                autoplayDisableOnInteraction: false,
+                effect: 'cube',
+                grabCursor: true,
+                cube: {
+                    shadow: true,
+                    slideShadows: true,
+                    shadowOffset: 20,
+                    shadowScale: 0.94
+                }
                 // centeredSlides: true
             })
         })
