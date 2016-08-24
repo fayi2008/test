@@ -21,7 +21,7 @@
     var plus={}
 
     plus._back=function () {
-        console.log(1)
+        
         var html='<div class="history-back">返回</div>'
         $('body').append(html)
         

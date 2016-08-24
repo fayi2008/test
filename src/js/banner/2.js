@@ -1,11 +1,11 @@
 /**
  * Created by admin on 2016/8/23.
  */
-require('../../css/banner/2.less')
+import '../../css/banner/2.less';
 
-import  banner  from './banner.js'
+import  banner  from './banner.js';
 
-class A1{
+class A2{
     constructor(){
         this.init()
     }
@@ -17,7 +17,6 @@ class A1{
 
             var swiper=require('Swiper')
 
-            console.log(222)
             swiper('#swiper',{
                 pagination: '.swiper-pagination',
                 paginationClickable: true,
@@ -30,6 +29,7 @@ class A1{
                 centeredSlides: true,
                 spaceBetween: 30,
                 grabCursor: true
+               // centeredSlides: true
             })
         })
     }
@@ -37,4 +37,4 @@ class A1{
 
 }
 
-new A1()
+new A2()

@@ -2,9 +2,9 @@
  * Created by admin on 2016/8/20.
  */
 
-require('swiper/dist/css/swiper.css');
-require('../../css/main.css');
-require('../../css/index.css');
+import 'swiper/dist/css/swiper.css';
+import '../../css/main.css';
+import '../../css/index.css';
 
 
 class banner {
@@ -25,7 +25,7 @@ class banner {
     }
 
     init() {
-
+        var _this=this
         var _plus = require('../../public.js');
         var vue = require('vue');
 
@@ -37,8 +37,7 @@ class banner {
                 data: rs,
                 ready: function () {
                     _plus._back()
-                    this.callback
-                    
+                    _this.callback()
 
                 }
             })
