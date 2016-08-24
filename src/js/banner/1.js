@@ -3,10 +3,10 @@
  */
 require('../../css/banner/1.css')
 
-var ceshi=require('./banner.js')
+import * as banner  from './banner.js'
 
 
-ceshi(function () {
+banner.banner(function () {
     var swiper=require('Swiper')
 
 

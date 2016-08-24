@@ -21,9 +21,14 @@ module.exports = {
             {test: /\.vue$/, loader: 'vue'},
             {test: /\.less/, loader: ExtractTextPlugin.extract("style-loader", "css-loader!less-loader")},
             {test: /\.css$/, loader: ExtractTextPlugin.extract('style-loader','css-loader')},
-            {test: /\.js$/, loader: 'babel-loader'},
+            {test: /\.js$/, loader: 'babel-loader',exclude: /(node_modules|bower_components)/},
             {test: /\.(png|jpg)$/, loader: 'url-loader?limit=8192'}
         ]
+    },
+    // 配置babel转化成es5的语法
+    babel: {
+        presets: ['es2015'],
+        plugins: ['transform-runtime']
     },
     plugins: [
         new ExtractTextPlugin('css/[name].css')

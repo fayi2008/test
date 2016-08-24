@@ -3,25 +3,38 @@
  */
 require('../../css/banner/2.less')
 
-var ceshi=require('./banner.js')
+import  banner  from './banner.js'
+
+class A1{
+    constructor(){
+        this.init()
+    }
+
+    init(){
+
+        banner.run(function(){
 
 
-ceshi(function () {
-    var swiper=require('Swiper')
+            var swiper=require('Swiper')
+
+            console.log(222)
+            swiper('#swiper',{
+                pagination: '.swiper-pagination',
+                paginationClickable: true,
+                nextButton: '.swiper-button-next',
+                prevButton: '.swiper-button-prev',
+                spaceBetween: 30,
+                scrollbar: '.swiper-scrollbar',
+                scrollbarHide: true,
+                slidesPerView: 'auto',
+                centeredSlides: true,
+                spaceBetween: 30,
+                grabCursor: true
+            })
+        })
+    }
 
 
-    swiper('#swiper',{
-        pagination: '.swiper-pagination',
-        paginationClickable: true,
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
-        spaceBetween: 30,
-        scrollbar: '.swiper-scrollbar',
-        scrollbarHide: true,
-        slidesPerView: 'auto',
-        centeredSlides: true,
-        spaceBetween: 30,
-        grabCursor: true
-    })
-})
+}
 
+new A1()

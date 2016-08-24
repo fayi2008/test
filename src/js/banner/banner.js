@@ -7,33 +7,48 @@ require('../../css/main.css');
 require('../../css/index.css');
 
 
-module.exports = function banner(callback) {
-    var _plus = require('../../public.js');
-    var vue = require('vue');
-    var _this = this
+class banner {
 
-    $.getJSON('../../datas/banner.json').done(function (rs) {
+    static run(callback) {
+        console.log(typeof callback)
+        if (typeof callback=="function") {
+            return new banner(callback);
 
-        new vue({
-            el: '#swiper',
-            data: rs,
-            ready: function () {
-                _plus._back()
-                callback()
+        } else {
+           console.log('XXX');
+        }
+    }
 
-            }
+    constructor(callback) {
+        this.callback=callback
+        this.init()
+    }
+
+    init() {
+
+        var _plus = require('../../public.js');
+        var vue = require('vue');
+
+
+        $.getJSON('../../datas/banner.json').done(function (rs) {
+
+            new vue({
+                el: '#swiper',
+                data: rs,
+                ready: function () {
+                    _plus._back()
+                    this.callback
+                    
+
+                }
+            })
+
         })
+    }
 
-    })
 
-    return _this
 }
-
-
-
-
-
-
+export default banner
 
 
 
