@@ -26,7 +26,7 @@
         $('body').append(html)
         
         $('.history-back').off('click').on('click',function () {
-            history.back()
+            location.href='/test/index.html'
         })
     }
 

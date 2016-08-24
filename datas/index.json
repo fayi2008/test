@@ -22,8 +22,20 @@
           "href":"./view/banner/1.html"
         },
         {
-          "name":"列表横向",
+          "name":"小块切换",
           "href":"./view/banner/2.html"
+        },
+        {
+          "name":"3D切换-翻转",
+          "href":"./view/banner/3.html"
+        },
+        {
+          "name":"3D切换-倾斜",
+          "href":"./view/banner/4.html"
+        },
+        {
+          "name":"3D切换-BOX",
+          "href":"./view/banner/5.html"
         }
       ]
     }

@@ -1,7 +1,7 @@
 /**
  * Created by admin on 2016/8/23.
  */
-import '../../css/banner/2.less';
+import '../../css/banner/1.css';
 
 import  banner  from './banner.js';
 
