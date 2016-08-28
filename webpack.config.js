@@ -7,6 +7,7 @@ module.exports = {
         index: './src/main.js',
         header1:'./src/js/header/header1.js',
         header2:'./src/js/header/header2.js',
+        header3:'./src/js/header/header3.js',
         banner1:'./src/js/banner/1.js',
         banner2:'./src/js/banner/2.js',
         banner3:'./src/js/banner/3.js',

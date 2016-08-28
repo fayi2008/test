@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1">
-    <link type="text/css" rel="stylesheet" href="../../dist/css/header1.css">
+    <link type="text/css" rel="stylesheet" href="../../dist/css/header3.css">
     <script src="../../lib/jquery.min.js"></script>
     <script src="../../dist/js/header1.js"></script>
 </head>
@@ -15,7 +15,10 @@
         <div class="h-box" v-for="list1 in result">
             <div class="h-title">{{list1.title}}</div>
             <div class="h-list">
+                <div class="h-list-box">
                 <a class="h-item" v-for="list2 in list1.list">{{list2.name}}</a>
+                </div>
+
             </div>
         </div>
     </div>

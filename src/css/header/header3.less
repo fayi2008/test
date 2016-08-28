@@ -1,0 +1,69 @@
+.pre(@style,@value){
+  -webkit-@{style}: @value;
+  -moz-@{style}: @value;
+  -ms-@{style}: @value;
+    @{style}: @value;
+}
+.h-banner{
+
+  float: right;
+}
+
+.h-box{
+  float: left;
+  width: 120px;
+  height: 82px;
+  line-height: 82px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  transition:all .5s;
+  &:hover{
+    background-color: #fff;
+    color: #000;
+    .h-list{
+      display: block;
+
+    }
+  }
+
+}
+.h-list{
+  display: none;
+  overflow: hidden;
+  box-shadow: 1px 1px 1px rgba(0,0,0,1);
+  transition:all 1s;
+  position: fixed;
+  top:80px;
+  height: 200px;
+  left: 0;
+  width: 100%;
+  background-color: #333333;
+  padding: 15px 0;
+}
+.h-list-box{
+  position: absolute;
+  left: 15%;
+  width: 30%;
+  height: 200px;
+}
+.h-item{
+  height: 40px;
+  line-height: 40px;
+  display:block;
+
+  .pre(border-radius,5px);
+  float:left;
+  width: 50%;
+  text-align: center;
+  color: #fff;
+  transition:all .5s;
+  &:hover{
+    background-color: #fff;
+    color: #000;
+  }
+}
