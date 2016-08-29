@@ -1,15 +1,27 @@
-var _plus = require('../../public.js')
-var vue = require('vue')
+import _plus from '../../public.js'
+import vue from 'vue'
 
 
-$.getJSON('../../datas/header.json').done(function (rs) {
+class header {
+    constructor(){
+        this.init()
+    }
 
-    new vue({
-        el: '#header',
-        data: rs,
-        ready: function () {
-            _plus._back()
-        }
-    })
+    init(){
+        $.getJSON('../../datas/header.json').done(function (rs) {
 
-})
+            new vue({
+                el: '#header',
+                data: rs,
+                ready: function () {
+                    _plus._back()
+                }
+            })
+
+        })
+    }
+}
+
+
+
+new header()

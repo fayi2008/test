@@ -1,3 +1,3 @@
 import '../../css/header/header2.less'
 
-require('./header.js')
+import './header.js'
