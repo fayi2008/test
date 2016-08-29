@@ -40,7 +40,7 @@ module.exports = {
     plugins: [
         new ExtractTextPlugin('css/[name].css'),
         new webpack.optimize.CommonsChunkPlugin({name: "com", minChunks: 3}),
-        new webpack.ProvidePlugin({// 全局依赖jQuery,不需要import了
+        new webpack.ProvidePlugin({// 全局依赖,不需要import了
             $ : "jquery",
             jQuery : "jquery",
             "window.jQuery" : "jquery",

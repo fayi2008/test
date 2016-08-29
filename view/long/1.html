@@ -5,6 +5,8 @@
     <title>Title</title>
     <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1">
     <link type="text/css" rel="stylesheet" href="../../dist/css/com.css">
+    <link type="text/css" rel="stylesheet" href="../../dist/css/long1.css">
+    <script src="../../dist/js/com.js"></script>
     <script src="../../dist/js/com.js"></script>
     <script src="../../dist/js/long1.js"></script>
 </head>
@@ -12,13 +14,13 @@
 <div id="header" class="header">
     <div class="logo"></div>
 </div>
-<div id="swiper_box">
+<div id="swiper_box" >
     <!-- Slider main container -->
-    <div class="" id="superContainer">
+    <div id="superContainer" >
         <div class="section" v-for="list in result" :style="{'backgroundColor':list.pic}">{{list.name}}</div>
 
     </div>
-    <div class="tips">{{tip}}</div>
+
 </div>
 </body>
 </html>

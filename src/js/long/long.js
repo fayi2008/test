@@ -2,9 +2,7 @@
  * Created by admin on 2016/8/20.
  */
 import '../../css/public.less';
-import 'fullpage/build/fullpage.css';
 
-import 'jquery-ui'
 
 class banner {
 
