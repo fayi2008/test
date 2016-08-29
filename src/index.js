@@ -3,9 +3,6 @@
  */
 import './css/public.less';
 
-import $ from 'jquery'
-import vue from 'vue'
-import './public.js'
 class index{
     constructor(){
         this.init()

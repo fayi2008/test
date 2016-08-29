@@ -42,6 +42,15 @@
           "href":"./view/banner/5.html"
         }
       ]
+    },
+    {
+      "title":"分屏特效",
+      "list":[
+        {
+          "name":"普通上下分屏",
+          "href":"./view/long/1.html"
+        }
+      ]
     }
   ]
 }

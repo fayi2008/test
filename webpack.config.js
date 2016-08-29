@@ -1,5 +1,6 @@
 var webpack = require('webpack')
 var ExtractTextPlugin=require('extract-text-webpack-plugin')
+var path=require('path')
 
 module.exports = {
     //页面入口文件配置
@@ -12,7 +13,8 @@ module.exports = {
         banner2:'./src/js/banner/2.js',
         banner3:'./src/js/banner/3.js',
         banner4:'./src/js/banner/4.js',
-        banner5:'./src/js/banner/5.js'
+        banner5:'./src/js/banner/5.js',
+        long1:'./src/js/long/1.js'
     },
     //入口文件输出配置
     output: {
@@ -34,10 +36,17 @@ module.exports = {
         presets: ['es2015'],
         plugins: ['transform-runtime']
     },
+
     plugins: [
         new ExtractTextPlugin('css/[name].css'),
-        new webpack.optimize.CommonsChunkPlugin({name: "com", minChunks: 3})
-
+        new webpack.optimize.CommonsChunkPlugin({name: "com", minChunks: 3}),
+        new webpack.ProvidePlugin({// 全局依赖jQuery,不需要import了
+            $ : "jquery",
+            jQuery : "jquery",
+            "window.jQuery" : "jquery",
+            vue:"vue",
+            _plus:path.join(__dirname,'/src/public.js')
+        })
     ]
 
 }

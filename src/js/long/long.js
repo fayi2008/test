@@ -2,7 +2,9 @@
  * Created by admin on 2016/8/20.
  */
 import '../../css/public.less';
-import 'swiper/dist/css/swiper.css';
+import 'fullpage/build/fullpage.css';
+
+import 'jquery-ui'
 
 class banner {
 
@@ -12,7 +14,7 @@ class banner {
             return new banner(callback);
 
         } else {
-           console.log('XXX');
+            console.log('XXX');
         }
     }
 
