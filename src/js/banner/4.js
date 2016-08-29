@@ -2,7 +2,6 @@
  * Created by admin on 2016/8/23.
  */
 import '../../css/banner/2.less';
-
 import  banner  from './banner.js';
 
 class A2{

@@ -1,8 +1,7 @@
 /**
  * Created by admin on 2016/8/23.
  */
-import '../../css/banner/1.css';
-
+import '../../css/banner/1.less';
 import  banner  from './banner.js';
 
 class A1{

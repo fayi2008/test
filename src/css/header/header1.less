@@ -1,3 +1,5 @@
+@import "../main";
+@import "../index";
 .h-banner{
 
     float: right;
@@ -18,13 +20,13 @@
     transition:all .5s;
 }
 .h-box:hover{
-    background-color: #fff;
-    color: #000;
+    background-color: @color2;
+    color: @color1;
 }
 .h-list{
     display: none;
     overflow: hidden;
-    box-shadow: 1px 1px 1px rgba(0,0,0,1);
+    box-shadow: 1px 1px 1px @color1;
     transition:all 1s;
     position: absolute;
     top:59px;
@@ -35,11 +37,11 @@
     height: 40px;
     line-height: 40px;
     display:block;
-    border-top: 1px solid #fff;
+    border-top: 1px solid @color2;
 
-    background-color: #000;
+    background-color: @color1;
     text-align: center;
-    color: #fff;
+    color: @color2;
     transition:all .5s;
 }
 
@@ -48,6 +50,6 @@
 
 }
 .h-item:hover{
-    background-color: #fff;
-    color: #000;
+    background-color: @color2;
+    color: @color1;
 }

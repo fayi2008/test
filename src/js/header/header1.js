@@ -1,4 +1,4 @@
-require('../../css/header/header1.css')
+import '../../css/header/header1.less'
 
 require('./header.js')
 

@@ -4,7 +4,7 @@ var ExtractTextPlugin=require('extract-text-webpack-plugin')
 module.exports = {
     //页面入口文件配置
     entry: {
-        index: './src/main.js',
+        index: './src/index.js',
         header1:'./src/js/header/header1.js',
         header2:'./src/js/header/header2.js',
         header3:'./src/js/header/header3.js',
@@ -23,8 +23,8 @@ module.exports = {
         //加载器配置
         loaders: [
             {test: /\.vue$/, loader: 'vue'},
-            {test: /\.less/, loader: ExtractTextPlugin.extract("style-loader", "css-loader!less-loader")},
-            {test: /\.css$/, loader: ExtractTextPlugin.extract('style-loader','css-loader')},
+            {test: /\.less/, loader: ExtractTextPlugin.extract("style-loader", 'css-loader!less-loader!autoprefixer-loader')},
+            {test: /\.css$/, loader: ExtractTextPlugin.extract('style-loader','css-loader!less-loader!autoprefixer-loader')},
             {test: /\.js$/, loader: 'babel-loader',exclude: /(node_modules|bower_components)/},
             {test: /\.(png|jpg)$/, loader: 'url-loader?limit=8192'}
         ]

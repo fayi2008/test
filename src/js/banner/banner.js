@@ -3,8 +3,8 @@
  */
 
 import 'swiper/dist/css/swiper.css';
-import '../../css/main.css';
-import '../../css/index.css';
+// import '../../css/main.less';
+// import '../../css/index.less';
 
 
 class banner {

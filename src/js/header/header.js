@@ -13,6 +13,3 @@ $.getJSON('../../datas/header.json').done(function (rs) {
     })
 
 })
-
-require('../../css/main.css')
-require('../../css/index.css')
