@@ -1,6 +1,7 @@
-import _plus from '../../public.js'
+import '../../css/public.less';
+import $ from 'jquery'
 import vue from 'vue'
-
+import _plus from '../../public.js'
 
 class header {
     constructor(){
@@ -21,7 +22,6 @@ class header {
         })
     }
 }
-
 
 
 new header()

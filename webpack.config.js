@@ -35,8 +35,9 @@ module.exports = {
         plugins: ['transform-runtime']
     },
     plugins: [
-        new ExtractTextPlugin('css/[name].css')
-        
+        new ExtractTextPlugin('css/[name].css'),
+        new webpack.optimize.CommonsChunkPlugin({name: "com", minChunks: 3})
+
     ]
 
 }

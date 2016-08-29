@@ -24,6 +24,7 @@
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.9.0",
     "fullpage": "^1.4.2",
+    "jquery": "^3.1.0",
     "less": "^2.7.1",
     "less-loader": "^2.2.3",
     "source-map": "^0.5.6",

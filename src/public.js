@@ -21,11 +21,17 @@
     var plus={}
 
     plus._back=function () {
-        
-        var html='<div class="history-back">返回</div>'
-        $('body').append(html)
-        
-        $('.history-back,.logo').off('click').on('click',function () {
+
+        var newhtml = document.createElement('div');
+        newhtml.className = 'history-back';
+        newhtml.innerHTML='back'
+        //var html='<div class="history-back">返回</div>'
+        document.body.appendChild(newhtml)
+
+        newhtml.addEventListener('click',function () {
+            location.href='/test/index.html'
+        })
+        document.querySelector('.logo').addEventListener('click',function () {
             location.href='/test/index.html'
         })
     }

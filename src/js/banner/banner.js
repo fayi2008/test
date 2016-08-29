@@ -1,12 +1,11 @@
 /**
  * Created by admin on 2016/8/20.
  */
-
+import '../../css/public.less';
 import 'swiper/dist/css/swiper.css';
-// import '../../css/main.less';
-// import '../../css/index.less';
-
-
+import $ from 'jquery'
+import vue from 'vue'
+import _plus from '../../public.js'
 class banner {
 
     static run(callback) {
@@ -26,10 +25,6 @@ class banner {
 
     init() {
         var _this=this
-        var _plus = require('../../public.js');
-        var vue = require('vue');
-
-
         $.getJSON('../../datas/banner.json').done(function (rs) {
 
             new vue({

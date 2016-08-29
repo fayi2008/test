@@ -2,6 +2,7 @@
  * Created by admin on 2016/8/23.
  */
 import '../../css/banner/2.less';
+import swiper from 'swiper';
 import  banner  from './banner.js';
 
 class A2{
@@ -12,9 +13,6 @@ class A2{
     init(){
 
         banner.run(function(){
-
-
-            var swiper=require('Swiper')
 
             swiper('#swiper',{
                 pagination: '.swiper-pagination',
