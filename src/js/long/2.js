@@ -67,6 +67,7 @@ class A2{
 
 
                     $('#githubLink, .twitter-share-button').appendTo('body');
+                    _plus._back()
 
                 }
 
@@ -75,6 +76,8 @@ class A2{
 
 
         })
+
+
 
     }
 

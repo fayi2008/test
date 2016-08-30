@@ -31,9 +31,14 @@
         newhtml.addEventListener('click',function () {
             location.href='/test/index.html'
         })
-        document.querySelector('.logo').addEventListener('click',function () {
-            location.href='/test/index.html'
-        })
+
+        if(document.querySelector('.logo')) {
+
+
+            document.querySelector('.logo').addEventListener('click', function () {
+                location.href = '/test/index.html'
+            })
+        }
     }
 
     plus._black = function () {
