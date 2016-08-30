@@ -49,6 +49,10 @@
         {
           "name":"普通上下分屏",
           "href":"./view/long/1.html"
+        },
+        {
+          "name":"仿H5",
+          "href":"./view/long/2.html"
         }
       ]
     }

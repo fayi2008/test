@@ -1,18 +1,15 @@
-import '../../css/long/1.less';
+import '../../css/long/2.less';
 import 'fullpage.js/jquery.fullpage.css';
-import  banner  from './long.js';
+
 import 'fullpage.js'
-class A1{
+class A2{
     constructor(){
         this.init()
     }
 
     init(){
-
-        banner.run(function(){
-
-            $.fn.fullpage({
-
+        $(function () {
+            $('#fullpage').fullpage({
                 'verticalCentered': false,
 
                 'anchors': ['page1', 'page2', 'page3', 'page4'],
@@ -28,39 +25,35 @@ class A1{
                 'navigationTooltips': ['fullPage.js', 'Powerful', 'Amazing', 'Simple'],
 
 
+                'afterLoad': function (anchorLink, index) {
 
-                'afterLoad': function(anchorLink, index){
-
-                    if(index == 2){
+                    if (index == 2) {
 
                         $('#iphone3, #iphone2, #iphone4').addClass('active');
 
                     }
 
-                    $('#infoMenu').toggleClass('whiteLinks', index ==4);
-
+                    $('#infoMenu').toggleClass('whiteLinks', index == 4);
 
 
                 },
 
 
+                'onLeave': function (index,index2, direction) {
 
-                'onLeave': function(index, direction){
+                    if (index == 3 && direction == 'down') {
 
-                    if (index == 3 && direction == 'down'){
-
-                        $('.section').eq(index -1).removeClass('moveDown').addClass('moveUp');
-
-                    }
-
-                    else if(index == 3 && direction == 'up'){
-
-                        $('.section').eq(index -1).removeClass('moveUp').addClass('moveDown');
+                        $('.section').eq(index - 1).removeClass('moveDown').addClass('moveUp');
 
                     }
 
+                    else if (index == 3 && direction == 'up') {
 
+                        $('.section').eq(index - 1).removeClass('moveUp').addClass('moveDown');
 
+                    }
+
+                    console.log(index,direction)
                     $('#staticImg').toggleClass('active', (index == 2 && direction == 'down' ) || (index == 4 && direction == 'up'));
 
                     $('#staticImg').toggleClass('moveDown', index == 3 && direction == 'down');
@@ -68,11 +61,9 @@ class A1{
                 },
 
 
-
-                afterRender: function(){
+                afterRender: function () {
 
                     $('#infoMenu').appendTo('body');
-
 
 
                     $('#githubLink, .twitter-share-button').appendTo('body');
@@ -80,12 +71,14 @@ class A1{
                 }
 
 
+            })
 
-            });
+
         })
+
     }
 
 
 }
 
-new A1()
+new A2()

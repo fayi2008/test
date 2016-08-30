@@ -14,7 +14,8 @@ module.exports = {
         banner3:'./src/js/banner/3.js',
         banner4:'./src/js/banner/4.js',
         banner5:'./src/js/banner/5.js',
-        long1:'./src/js/long/1.js'
+        long1:'./src/js/long/1.js',
+        long2:'./src/js/long/2.js'
     },
     //入口文件输出配置
     output: {
