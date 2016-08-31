@@ -17,12 +17,12 @@ class banner {
     }
 
     constructor(callback) {
-        this.callback=callback
+        this.callback=callback;
         this.init()
     }
 
     init() {
-        var _this=this
+        var _this=this;
         $.getJSON('../../datas/banner.json').done(function (rs) {
 
             new vue({
