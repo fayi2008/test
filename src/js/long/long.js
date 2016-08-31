@@ -7,12 +7,12 @@ import '../../css/public.less';
 class banner {
 
     static run(callback) {
-        console.log(typeof callback)
+
         if (typeof callback=="function") {
             return new banner(callback);
 
         } else {
-            console.log('XXX');
+            console.error('错误');
         }
     }
 
