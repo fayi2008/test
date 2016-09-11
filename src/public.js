@@ -2,19 +2,10 @@
 
     "use strict";
 
-    if ( typeof module === "object" && typeof module.exports === "object" ) {
+    typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
+        typeof define === 'function' && define.amd ? define(factory) :
+            (global.plus = factory());
 
-        module.exports = global.document ?
-            factory( global, true ) :
-            function( w ) {
-                if ( !w.document ) {
-                    throw new Error( "jQuery requires a window with a document" );
-                }
-                return factory( w );
-            };
-    } else {
-        factory( global );
-    }
 
 })( typeof window !== "undefined" ? window : this,function (win,noGlobal) {
 
