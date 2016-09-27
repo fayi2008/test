@@ -31,7 +31,7 @@ class banner {
                 ready: function () {
                     _plus._back()
                     _this.callback()
-
+                    
                 }
             })
 
