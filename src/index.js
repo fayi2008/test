@@ -21,9 +21,9 @@ class index{
     }
 
 }
-
-
-new index()
+    
+    
+    new index()
 
 
 

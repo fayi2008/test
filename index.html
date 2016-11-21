@@ -4,24 +4,93 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1">
-    <link type="text/css" rel="stylesheet" href="./dist/css/com.css">
+    <!--<link type="text/css" rel="stylesheet" href="./dist/css/com.css">-->
     <script src="./dist/js/com.js"></script>
-    <script src="./dist/js/index.js"></script>
+    <!--<script src="./dist/js/index.js"></script>-->
+    <style>
+        #cjcanvas {
+            width: 300px;
+            height: 150px;
+        }
+    </style>
 </head>
 <body id="index">
-    <div class="header">
-        <div class="logo"></div>
+<!--<div class="header">-->
+<!--<div class="logo"></div>-->
 
-    </div>
-    <div class="example-box" v-for="list1 in result">
-        <div class="example-title">
-            {{list1.title}}
-        </div>
-        <div class="example-list">
-            <a  v-for="list2 in list1.list" href="{{list2.href}}">{{list2.name}}</a>
-        </div>
-    </div>
+<!--</div>-->
+<!--<div class="example-box" v-for="list1 in result">-->
+<!--<div class="example-title">-->
+<!--{{list1.title}}-->
+<!--</div>-->
+<!--<div class="example-list">-->
+<!--<a  v-for="list2 in list1.list" href="{{list2.href}}">{{list2.name}}</a>-->
+<!--</div>-->
+<!--</div>-->
+<canvas id="cjcanvas"></canvas>
+<script>
+    var cvs = document.getElementById('cjcanvas')
+    var l = cvs.getBoundingClientRect().left,
+            t = cvs.getBoundingClientRect().top
+    var ctx = cvs.getContext('2d')
 
+    function init() {
+        ctx.globalCompositeOperation = "source-over";
+        ctx.fillStyle = '#cccccc'
+        ctx.fillRect(0, 0, 300, 150);
+        ctx.globalCompositeOperation = "destination-out";
+
+    }
+    init()
+    cvs.addEventListener('touchstart', function (event) {
+        console.log(event.targetTouches[0].pageX)
+        var nowx = event.targetTouches[0].pageX,
+                nowy = event.targetTouches[0].pageY
+        ctx.beginPath();
+
+        ctx.moveTo(nowx - l, nowy - t)
+        console.log(nowx - l, nowy - t)
+
+        ctx.lineWidth = 20;
+    })
+
+    cvs.addEventListener('touchmove', function (event) {
+        var nowx = event.targetTouches[0].pageX,
+                nowy = event.targetTouches[0].pageY
+
+        ctx.lineTo(nowx - l, nowy - t)
+        ctx.stroke();
+
+
+    })
+
+    cvs.addEventListener('touchend', function (event) {
+        var pix = ctx.getImageData(0,0,cvs.width,cvs.height).data;
+        console.log(pix);
+
+        for (var i=0,j=0;i<pix.length;i+=4){
+            if(pix[i]&&pix[i+1]&&pix[i+2]&&pix[i+3]){
+
+                j++;
+            }
+        }
+
+
+        var shengyu=0.5 //这里写需要多少百分比触发事件
+        if(j<=cvs.width*cvs.height*shengyu){
+            console.log(j);
+            ctx.clearRect(0,0,cvs.width,cvs.height);
+            //这里触发的回调
+
+
+           // $('.again').show()
+        }
+    })
+
+
+
+
+</script>
 
 
 </body>
